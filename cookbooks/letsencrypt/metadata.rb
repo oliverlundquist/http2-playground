@@ -1,0 +1,8 @@
+name             'letsencrypt'
+maintainer       'Oliver Lundquist'
+maintainer_email 'mail@oliverlundquist.com'
+license          'All rights reserved'
+description      'Install and Setup Letsencrypt Environment'
+long_description 'Install and Setup Letsencrypt Environment'
+version          '1.0.0'
+supports         'ubuntu', '= 14.04'

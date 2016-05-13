@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    image: oliverlundquist/nginx:0.0.1
+    ports:
+     - "80:80"
+     - "443:443"
+    networks:
+      - php-app
+networks:
+  php-app:
+    driver: bridge

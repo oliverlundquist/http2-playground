@@ -1,0 +1,8 @@
+name             'admin_users'
+maintainer       'Oliver Lundquist'
+maintainer_email 'mail@oliverlundquist.com'
+license          'All rights reserved'
+description      'Creates and Setups user accounts'
+long_description 'Creates and Setups user accounts'
+version          '1.0.0'
+supports         'ubuntu', '= 14.04'

@@ -1,0 +1,21 @@
+server {
+	listen 443 ssl http2 default_server;
+	# listen [::]:443 ssl http2 default_server;
+
+	ssl_certificate /etc/letsencrypt/live/oliverlundquist.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/oliverlundquist.com/privkey.pem;
+
+	root /var/www/html;
+	index index.html index.nginx-debian.html;
+
+	server_name oliver.dev;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	#location ~ \.php$ {
+	#	include snippets/fastcgi-php.conf;
+	#	fastcgi_pass 127.0.0.1:9000;
+	#}
+}
